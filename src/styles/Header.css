@@ -1,0 +1,106 @@
+.header {
+  background-color: #1F2937;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00E396;
+}
+
+.header-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.header-nav-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #00E396;
+}
+
+.header-nav-button.active {
+  background-color: rgba(0, 227, 150, 0.2);
+  color: #00E396;
+  font-weight: 500;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #00E396;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111928;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-logo {
+    margin-bottom: 10px;
+  }
+  
+  .header-nav {
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .header-actions {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+} 

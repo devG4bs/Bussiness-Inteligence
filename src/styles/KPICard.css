@@ -1,0 +1,120 @@
+.kpi-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform var(--transition-speed);
+}
+
+.kpi-card:hover {
+  transform: translateY(-5px);
+}
+
+.kpi-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--text-primary);
+  position: relative;
+}
+
+.kpi-icon::before {
+  font-family: 'sans-serif';
+  position: absolute;
+}
+
+.kpi-icon.money {
+  background-color: var(--accent-primary);
+}
+
+.kpi-icon.money::before {
+  content: '$';
+}
+
+.kpi-icon.income {
+  background-color: var(--accent-secondary);
+}
+
+.kpi-icon.income::before {
+  content: '↑$';
+}
+
+.kpi-icon.card {
+  background-color: var(--accent-quaternary);
+}
+
+.kpi-icon.card::before {
+  content: '💳';
+}
+
+.kpi-icon.savings {
+  background-color: var(--accent-tertiary);
+}
+
+.kpi-icon.savings::before {
+  content: '💰';
+}
+
+.kpi-icon.users {
+  background-color: var(--accent-secondary);
+}
+
+.kpi-icon.users::before {
+  content: '👥';
+}
+
+.kpi-icon.chart {
+  background-color: var(--accent-tertiary);
+}
+
+.kpi-icon.chart::before {
+  content: '📊';
+}
+
+.kpi-icon.tag {
+  background-color: var(--accent-quaternary);
+}
+
+.kpi-icon.tag::before {
+  content: '🏷️';
+}
+
+.kpi-content {
+  flex: 1;
+}
+
+.kpi-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 5px;
+}
+
+.kpi-value {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.kpi-change {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.kpi-change.positive {
+  color: var(--accent-primary);
+}
+
+.kpi-change.negative {
+  color: var(--accent-quaternary);
+} 
